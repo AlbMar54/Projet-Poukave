@@ -1,0 +1,156 @@
+Nom de l'Histoire;Code (1re lettre de votre prénom + numéro de l'histoire);Chambre(s) n° (sur les 12);Auteur/rice;Vrai camarade ou traître ?;Nom interlocuteur A;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Nom interlocuteur B;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Textes
+Bouquet émissaire;A1;3;Alban;Traître;Dimitri;Cyrillique;normale (on entrera les valeurs plus tard);moyenne;FALSE;Vendeur de fleurs;Cyrillique;normale;moyenne;FALSE;Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?
+;;;;;;;;;;;;;;;Bonjour, alors voilà, ma belle-mère est assez souffrante et manque de compagnie. J'aurais souhaité lui faire parvenir un petit réconfort. Je ne sais pas si vous assurez des livraisons ?
+;;;;;;;;;;;;;;;Dans Moscou intra-muros uniquement, où habite votre belle-mère ?
+;;;;;;;;;;;;;;;Dans le sud-est de Yakimanka. Vous pouvez-vous en charger ?
+;;;;;;;;;;;;;;;Tout à fait, monsieur. Vous avez une idée précise de ce que vous souhaitez ?
+;;;;;;;;;;;;;;;Un bouquet avec quatre couleurs différentes. Peu importe les variétés de fleurs, seules les couleurs importent. Il me faudrait du jaune, du violet, du rouge et du noir. 
+;;;;;;;;;;;;;;;Hum, Monsieur, je vous recommande pas le noir, historiquement, ça ne se fait pas d'offrir des fleurs noires à un malade. Certains y voient un mauvais présage.
+;;;;;;;;;;;;;;;Peu m'importe Monsieur, ça a toujours été sa couleur préférée.
+;;;;;;;;;;;;;;;Comme il vous plaira. Je peux vous préparer quelques suggestions de bouquets d'ici à deux petites heures. Il ne vous restera plus qu'à passer à la boutique pour valider votre choix et on s'occupe du reste.
+;;;;;;;;;;;;;;;Je préfère ne pas me rendre au centre ville. Ma belle-mère a des goûts douteux, n'importe quel bouquet lui fera plaisir. Ne tardez pas trop, vous avez normalement déjà reçu vos honoraires par la poste ce matin.
+;;;;;;;;;;;;;;;... Comme vous voudrez. Livraison à quel nom et adresse ?
+;;;;;;;;;;;;;;;Laissez le bouquet dans l'épicerie centrale de Yakimanka, au nom d'Esmera Tarkhov. Ma belle-mère ira le chercher là-bas.
+;;;;;;;;;;;;;;;Mais, vous la disiez souffrante...
+;;;;;;;;;;;;;;;Son mari viendra chercher le bouquet. 
+Venise;P1;2;Polina;Traître;Boris;Cyrillique;normale (on entrera les valeurs plus tard);moyenne;FALSE;Employée d'une agence de voyages;Cyrillique;normale;moyenne;;Bonjour ! Agence de voyages « Intourist », comment puis-je vous aider ?
+;;;;;;;;;;;;;;;Bonjour ! J'ai besoin d'un voyage organisé pour Venise : une chambre d'hôtel pour trois jours avec vue sur le Pont des Soupirs. 
+;;;;;;;;;;;;;;;D'accord, est-ce que les dates du 4 au 7 février vous conviennent ? Vous partez pour le Carnaval de Venise, c'est bien ça ?
+;;;;;;;;;;;;;;;Oui, tout à fait, c'est précisément là que je vais.
+;;;;;;;;;;;;;;;Dites-moi, s'il vous plaît, vous avez besoin d'une chambre pour une ou deux personnes ?
+;;;;;;;;;;;;;;;Pour deux, je pars avec mon épouse.
+;;;;;;;;;;;;;;;C'est noté, je vous ai réservé la chambre. Est-ce que je peux faire autre chose pour vous ?
+;;;;;;;;;;;;;;;Oui, il me faudra aussi deux gondoles et deux porteurs... Vous avez des porteurs qui parlent russe ?
+;;;;;;;;;;;;;;;Malheureusement non, nous n'en avons pas.
+;;;;;;;;;;;;;;;Tant mieux !
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+La ballerine Katia;P2;5;Polina;vrai camarade;Katia;Cyrillique;normale (on entrera les valeurs plus tard);moyenne;FALSE;une amie sans nom;Cyrillique;normale;moyenne;FALSE;Bonjour Katia ! Comment que ça va ?
+;;;;;;;;;;;;;;;Salut, salut ! Ça va, tranquille. Tu es à Moscou en ce moment ?
+;;;;;;;;;;;;;;;Oui, je danse au Bolchoï aujourd'hui. Après le spectacle, j'ai rendez-vous avec Vassili.
+;;;;;;;;;;;;;;;Mais tu n'avais pas rompu avec lui ?
+;;;;;;;;;;;;;;;Si, mais c'est la dernière fois qu'on se voit. Promis.
+;;;;;;;;;;;;;;;Mais il voulait émigrer, non ? 
+;;;;;;;;;;;;;;;Oui, on dirait bien.
+;;;;;;;;;;;;;;;Et tu ne veux pas partir avec lui ?
+;;;;;;;;;;;;;;;Non, j'adore le Bolchoï, j'adore le ballet russe ! Je ne pourrai jamais vivre sans tout ça !
+La loterie du parti;V1;11;Valentin;Vrai camarade;Maximov;Cyrillique;normale (on entrera les valeurs plus tard);moyenne;FALSE;Igor;Cyrillique;normale;moyenne;FALSE;Camarade Igor ! Je t'ai attendu toute la journée ! Tu as les numéros gagnants ?
+;;;;;;;;;;;;;;;Sept....Douze....Quatre...Huit et Ving-et-Un.
+;;;;;;;;;;;;;;;Huit ? Vraiment ?!
+;;;;;;;;;;;;;;;Oui...Huit, Maximov.
+;;;;;;;;;;;;;;;Mishka va en craquer son porte-jartelles. J'ai mis neuf, putain.
+;;;;;;;;;;;;;;;Neuf ? Tu es un imbécile. Le neuf porte malheur. 
+;;;;;;;;;;;;;;;Nikolaï a mis le onze, au lieu du douze. Il a perdu, mais c'est lui qui risque d'avoir l'appartement donné par le parti.
+;;;;;;;;;;;;;;;Ça me fait une belle jambe. Tu sais que j'en avais besoin. Le mien est un taudis, il se dégrade à vu d'oeil...
+;;;;;;;;;;;;;;;Ouais, il n'y a pas que ton appart qui se dégrade.... CAMARADE.
+;;;;;;;;;;;;;;;Quoi ? J'ai pas entendu. Répète ?
+;;;;;;;;;;;;;;;J'ai dit que je pense déménager à Volgograd. Bref, dasvidania.
+;;;;;;;;;;;;;;;Dasvidania, saleté. 
+Un enfant studieux;N1;5;Nolwen;Vrai camarade;Nikolaï;Cyrillique;normale (on entrera les valeurs plus tard);Lent;FALSE;Anna;Cyrillique;normale;Moyenne;FALSE;Bonjour Anna, c’est Nikola. Je t’appelle pour te dire que je suis bien arrivé à Moscou.
+;;;;;;;;;;;;;;;Bonjour Nikolaï, comment vas-tu ? Le voyage s’est bien passé ?
+;;;;;;;;;;;;;;;Très bien ! Je t’appelle aussi pour prendre des nouvelles du petit Pietro. Comment ça va ?
+;;;;;;;;;;;;;;;Oh, il va très bien !
+;;;;;;;;;;;;;;;Et à l’école ?
+;;;;;;;;;;;;;;;Ah oui, à l’école… Il a de très bonnes notes, tu sais. Il a eu un 12 en mathématique !
+;;;;;;;;;;;;;;;Ah, tant mieux ! Il tient bien de son père, ce petit. Je pourrais lui parler ?
+;;;;;;;;;;;;;;;Désolée, il est en train de manger ses pelmenis. Je ne voudrais pas le déranger. Tu sais, il est très fatigué en ce moment avec l’école et tout…
+;;;;;;;;;;;;;;;Ce n’est pas grave, laisse-le un peu tranquille, ce petit ! Qu’il reprenne des forces et qu’il continue à bien travailler à l’école. Il ira loin un jour ! Je te rappellerai quand je serai arrivé à Minsk. A bientôt !
+;;;;;;;;;;;;;;;Pas de souci, à bientôt Nikolaï !
+;;;;;;;;;;;;;;;À bientôt !
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;
+;;;;;;;;;FALSE;;;;;FALSE;

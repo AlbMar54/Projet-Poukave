@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+
 
 public class StoryManager : MonoBehaviour
 {
     public TextAsset storycsv;
+    public TextMeshProUGUI textSpeakerUp;
+    public TextMeshProUGUI textSpeakerDown;
     string[,] storyGrid;
     // Start is called before the first frame update
     void Start()
     {
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
-        print(storyGrid[0,1]);
+        textSpeakerDown.text = (storyGrid[13,1]);
+        print(storyGrid[13, 1]);
+        //Invoke() 
 
     }
 
