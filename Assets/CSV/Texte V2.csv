@@ -1,0 +1,61 @@
+Nom de l'Histoire,Code (1re lettre de votre prénom + numéro de l'histoire),Chambre(s) n° (sur les 12),Auteur/rice,Vrai camarade ou traître ?,Nom interlocuteur A,Police d'écriture,Vitesse défilement,Taille de police,Interférence ?,Nom interlocuteur B,Police d'écriture,Vitesse défilement,Taille de police,Interférence ?,Textes,"Longueur de la phrase (0 si moyen, 1 si long, -1 si c'est court)",Durée en temps (inutile d'écrire)
+Bouquet émissaire,A1,3,Alban,Traître,Dimitri,Cyrillique,normale (on entrera les valeurs plus tard),moyenne,Non,Vendeur de fleurs,Cyrillique,normale,moyenne,Non,"Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?",0,5
+,,,,,,,,,,,,,,,"Bonjour, alors voilà, ma belle-mère est assez souffrante et manque de compagnie. J'aurais souhaité lui faire parvenir un petit réconfort. Je ne sais pas si vous assurez des livraisons ?",1,6
+,,,,,,,,,,,,,,,"Dans Moscou intra-muros uniquement, où habite votre belle-mère ?",-1,4
+,,,,,,,,,,,,,,,Dans le sud-est de Yakimanka. Vous pouvez-vous en charger ?,0,5
+,,,,,,,,,,,,,,,"Tout à fait, monsieur. Vous avez une idée précise de ce que vous souhaitez ?",0,5
+,,,,,,,,,,,,,,,"Un bouquet avec quatre couleurs différentes. Peu importe les variétés de fleurs, seules les couleurs importent. Il me faudrait du jaune, du violet, du rouge et du noir. ",1,6
+,,,,,,,,,,,,,,,"Hum, Monsieur, je vous recommande pas le noir, historiquement, ça ne se fait pas d'offrir des fleurs noires à un malade. Certains y voient un mauvais présage.",1,6
+,,,,,,,,,,,,,,,"Peu m'importe Monsieur, ça a toujours été sa couleur préférée.",-1,4
+,,,,,,,,,,,,,,,Comme il vous plaira. Je peux vous préparer quelques suggestions de bouquets d'ici à deux petites heures. Il ne vous restera plus qu'à passer à la boutique pour valider votre choix et on s'occupe du reste.,1,6
+,,,,,,,,,,,,,,,"Je préfère ne pas me rendre au centre ville. Ma belle-mère a des goûts douteux, n'importe quel bouquet lui fera plaisir. Ne tardez pas trop, vous avez normalement déjà reçu vos honoraires par la poste ce matin.",1,6
+,,,,,,,,,,,,,,,... Comme vous voudrez. Livraison à quel nom et adresse ?,-1,4
+,,,,,,,,,,,,,,,"Laissez le bouquet dans l'épicerie centrale de Yakimanka, au nom d'Esmera Tarkhov. Ma belle-mère ira le chercher là-bas.",1,6
+,,,,,,,,,,,,,,,"Mais, vous la disiez souffrante...",-1,4
+,,,,,,,,,,,,,,,Son mari viendra chercher le bouquet. ,-1,4
+Venise,P1,2,Polina,Traître,Boris,Cyrillique,normale (on entrera les valeurs plus tard),moyenne,Non,Employée d'une agence de voyages,Cyrillique,normale,moyenne,Non,"Bonjour ! Agence de voyages « Intourist », comment puis-je vous aider ?",0,5
+,,,,,,,,,,,,,,,Bonjour ! J'ai besoin d'un voyage organisé pour Venise : une chambre d'hôtel pour trois jours avec vue sur le Pont des Soupirs. ,1,6
+,,,,,,,,,,,,,,,"D'accord, est-ce que les dates du 4 au 7 février vous conviennent ? Vous partez pour le Carnaval de Venise, c'est bien ça ?",1,6
+,,,,,,,,,,,,,,,"Oui, tout à fait, c'est précisément là que je vais.",-1,4
+,,,,,,,,,,,,,,,"Dites-moi, s'il vous plaît, vous avez besoin d'une chambre pour une ou deux personnes ?",1,6
+,,,,,,,,,,,,,,,"Pour deux, je pars avec mon épouse.",-1,4
+,,,,,,,,,,,,,,,"C'est noté, je vous ai réservé la chambre. Est-ce que je peux faire autre chose pour vous ?",0,5
+,,,,,,,,,,,,,,,"Oui, il me faudra aussi deux gondoles et deux porteurs... Vous avez des porteurs qui parlent russe ?",0,5
+,,,,,,,,,,,,,,,"Malheureusement non, nous n'en avons pas.",-1,4
+,,,,,,,,,,,,,,,Tant mieux !,-1,4
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+La ballerine Katia,P2,5,Polina,vrai camarade,Katia,Cyrillique,normale (on entrera les valeurs plus tard),moyenne,Non,une amie sans nom,Cyrillique,normale,moyenne,Non,Bonjour Katia ! Comment que ça va ?,-1,5
+,,,,,,,,,,,,,,,"Salut, salut ! Ça va, tranquille. Tu es à Moscou en ce moment ?",-1,5
+,,,,,,,,,,,,,,,"Oui, je danse au Bolchoï aujourd'hui. Après le spectacle, j'ai rendez-vous avec Vassili.",0,5
+,,,,,,,,,,,,,,,Mais tu n'avais pas rompu avec lui ?,-1,5
+,,,,,,,,,,,,,,,"Si, mais c'est la dernière fois qu'on se voit. Promis.",-1,5
+,,,,,,,,,,,,,,,"Mais il voulait émigrer, non ? ",-1,5
+,,,,,,,,,,,,,,,"Oui, on dirait bien.",-1,5
+,,,,,,,,,,,,,,,Et tu ne veux pas partir avec lui ?,-1,5
+,,,,,,,,,,,,,,,"Non, j'adore le Bolchoï, j'adore le ballet russe ! Je ne pourrai jamais vivre sans tout ça !",0,5
+La loterie du parti,V1,11,Valentin,Vrai camarade,Maximov,Cyrillique,normale (on entrera les valeurs plus tard),moyenne,Non,Igor,Cyrillique,normale,moyenne,Non,Camarade Igor ! Je t'ai attendu toute la journée ! Tu as les numéros gagnants ?,0,
+,,,,,,,,,,,,,,,Sept....Douze....Quatre...Huit et Ving-et-Un.,-1,
+,,,,,,,,,,,,,,,Huit ? Vraiment ?!,-1,
+,,,,,,,,,,,,,,,"Oui...Huit, Maximov.",-1,
+,,,,,,,,,,,,,,,"Mishka va en craquer son porte-jartelles. J'ai mis neuf, putain.",0,
+,,,,,,,,,,,,,,,Neuf ? Tu es un imbécile. Le neuf porte malheur. ,0,
+,,,,,,,,,,,,,,,"Nikolaï a mis le onze, au lieu du douze. Il a perdu, mais c'est lui qui risque d'avoir l'appartement donné par le parti.",1,
+,,,,,,,,,,,,,,,"Ça me fait une belle jambe. Tu sais que j'en avais besoin. Le mien est un taudis, il se dégrade à vu d'oeil...",0,
+,,,,,,,,,,,,,,,"Ouais, il n'y a pas que ton appart qui se dégrade.... CAMARADE.",-1,
+,,,,,,,,,,,,,,,Quoi ? J'ai pas entendu. Répète ?,-1,
+,,,,,,,,,,,,,,,"J'ai dit que je pense déménager à Volgograd. Bref, dasvidania.",1,
+,,,,,,,,,,,,,,,"Dasvidania, saleté. ",-1,
+Un enfant studieux,N1,5,Nolwen,Vrai camarade,Nikolaï,Cyrillique,normale (on entrera les valeurs plus tard),Lent,Non,Anna,Cyrillique,normale,Moyenne,Non,"Bonjour Anna, c’est Nikola. Je t’appelle pour te dire que je suis bien arrivé à Moscou.",0,
+,,,,,,,,,,,,,,,"Bonjour Nikolaï, comment vas-tu ? Le voyage s’est bien passé ?",-1,
+,,,,,,,,,,,,,,,Très bien ! Je t’appelle aussi pour prendre des nouvelles du petit Pietro. Comment ça va ?,0,
+,,,,,,,,,,,,,,,"Oh, il va très bien !",-1,
+,,,,,,,,,,,,,,,Et à l’école ?,-1,
+,,,,,,,,,,,,,,,"Ah oui, à l’école… Il a de très bonnes notes, tu sais. Il a eu un 12 en mathématique !",0,
+,,,,,,,,,,,,,,,"Ah, tant mieux ! Il tient bien de son père, ce petit. Je pourrais lui parler ?",0,
+,,,,,,,,,,,,,,,"Désolée, il est en train de manger ses pelmenis. Je ne voudrais pas le déranger. Tu sais, il est très fatigué en ce moment avec l’école et tout…",1,
+,,,,,,,,,,,,,,,"Ce n’est pas grave, laisse-le un peu tranquille, ce petit ! Qu’il reprenne des forces et qu’il continue à bien travailler à l’école. Il ira loin un jour ! Je te rappellerai quand je serai arrivé à Minsk. A bientôt !",1,
+,,,,,,,,,,,,,,,"Pas de souci, à bientôt Nikolaï !",-1,
+,,,,,,,,,,,,,,,À bientôt !,-1,
+,P1,1,Polina,Traître,Mark,Cyrillique,normale (on entrera les valeurs plus tard),moyenne,Non,,,,,,,,
