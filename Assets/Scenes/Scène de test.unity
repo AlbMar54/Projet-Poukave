@@ -122,6 +122,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &387450238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387450240}
+  - component: {fileID: 387450239}
+  m_Layer: 0
+  m_Name: FontManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &387450239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387450238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11da07550b99a0c49b5af8709ccfa973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storycsv: {fileID: 4900000, guid: 2b63750e7a666514b9a86299cf907692, type: 3}
+  textSpeakerUp: {fileID: 739556503}
+  textSpeakerDown: {fileID: 1614573566}
+  russianFont: {fileID: 11400000, guid: 40f084f447c92894db2f70c0c0908e63, type: 2}
+  germanFont: {fileID: 11400000, guid: 2030b7d62be2404409f48da716bb8050, type: 2}
+--- !u!4 &387450240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387450238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1867112, y: -0.6573935, z: 0.005999088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &506077651
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +618,8 @@ MonoBehaviour:
   storycsv: {fileID: 4900000, guid: 2b63750e7a666514b9a86299cf907692, type: 3}
   textSpeakerUp: {fileID: 739556503}
   textSpeakerDown: {fileID: 1614573566}
+  textSpeedSpeakerUp: 0.009
+  textSpeedSpeakerDown: 0.009
   rectTransformTextSpeakerUp: {fileID: 739556501}
   rectTransformTextSpeakerDown: {fileID: 1614573568}
 --- !u!4 &759133521
@@ -994,3 +1045,4 @@ SceneRoots:
   - {fileID: 1214881951}
   - {fileID: 759133521}
   - {fileID: 623878847}
+  - {fileID: 387450240}

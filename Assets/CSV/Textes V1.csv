@@ -1,5 +1,5 @@
 Nom de l'Histoire;Code (1re lettre de votre prénom + numéro de l'histoire);Chambre(s) n° (sur les 12);Auteur/rice;Vrai camarade ou traître ?;Nom interlocuteur A;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Nom interlocuteur B;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Textes;Longueur de la phrase (0 si moyen, 1 si long, -1 si c'est court);Durée en temps (inutile d'écrire)
-Bouquet émissaire;A1;3;Alban;Traître;Dimitri;Cyrillique;0,2;moyenne;Non;Vendeur de fleurs;Cyrillique;0,2;moyenne;Non;Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?;0;3
+Bouquet émissaire;A1;3;Alban;Traître;Dimitri;Cyrillique;0,3;moyenne;Non;Vendeur de fleurs;Allemand;0,2;moyenne;Non;Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?;0;3
 ;;;;;;;;;;;;;;;Bonjour, alors voilà, ma belle-mère est assez souffrante et manque de compagnie. J'aurais souhaité lui faire parvenir un petit réconfort. Je ne sais pas si vous assurez des livraisons ?;1;4
 ;;;;;;;;;;;;;;;Dans Moscou intra-muros uniquement, où habite votre belle-mère ?;-1;2
 ;;;;;;;;;;;;;;;Dans le sud-est de Yakimanka. Vous pouvez-vous en charger ?;0;3

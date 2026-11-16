@@ -10,10 +10,11 @@ public class StoryManager : MonoBehaviour
     public TextAsset storycsv;
     public TextMeshProUGUI textSpeakerUp;
     public TextMeshProUGUI textSpeakerDown;
-    //public float textSpeedSpeakerUp;
+    public float textSpeedSpeakerUp;
+    public float textSpeedSpeakerDown; //pour le testing
     string[,] storyGrid;
-    float textSpeedSpeakerUp;
-    float textSpeedSpeakerDown;
+    //float textSpeedSpeakerUp;
+    //float textSpeedSpeakerDown;
     public RectTransform rectTransformTextSpeakerUp;
     public RectTransform rectTransformTextSpeakerDown;
     int indexSpeakerUp = 1;
@@ -27,7 +28,9 @@ public class StoryManager : MonoBehaviour
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
         //print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
         textSpeakerDown.text = " ";
-        timerBeforeChangingDialog = float.Parse(storyGrid[17, 2]);
+        //textSpeedSpeakerUp = float.Parse(storyGrid[17,1]);
+        //textSpeedSpeakerDown = float.Parse(storyGrid[12,1]); //pour convertir un string en float
+        timerBeforeChangingDialog = float.Parse(storyGrid[17,2]);
         StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
         Invoke("ChangeSpeaker", timerBeforeChangingDialog);
                 
