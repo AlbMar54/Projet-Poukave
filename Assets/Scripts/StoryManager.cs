@@ -25,37 +25,18 @@ public class StoryManager : MonoBehaviour
     void Start()
     {
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
-        print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
+        //print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
         textSpeakerDown.text = " ";
-
-        //textSpeedSpeakerUp = float.Parse(storyGrid[7,1]);
-        //textSpeedSpeakerDown = float.Parse(storyGrid[12, 1]); //pour convertir un string en float
-        print(textSpeedSpeakerDown);
         timerBeforeChangingDialog = float.Parse(storyGrid[17, 2]);
         StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
         Invoke("ChangeSpeaker", timerBeforeChangingDialog);
-
-
+                
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch (activeSpeaker)
-        {
-            case ActiveSpeaker.ActiveSpeakerUp:
-                //textSpeakerUp.text = storyGrid[15, indexSpeakerUp];
-                //StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
-                //rectTransformTextSpeakerUp.localPosition += Vector3.left * textSpeedSpeakerUp;
-                break;
-
-            case ActiveSpeaker.ActiveSpeakerDown:
-
-                //textSpeakerDown.text = storyGrid[15, indexSpeakerDown];
-                //StartCoroutine(TestTextDefile(textSpeakerDown, storyGrid[15, indexSpeakerDown], textSpeedSpeakerDown));
-                //rectTransformTextSpeakerDown.localPosition += Vector3.left * textSpeedSpeakerDown;
-                break;
-        }
+        
 
     }
 
@@ -70,44 +51,68 @@ public class StoryManager : MonoBehaviour
     }
     public void ChangeSpeaker()
     {
-        switch (activeSpeaker)
+        
         {
-            case ActiveSpeaker.ActiveSpeakerUp:
-                
-                activeSpeaker = ActiveSpeaker.ActiveSpeakerDown;
-                Invoke("DisplayText",0);
-                break;
+            switch (activeSpeaker)
+            {
+                case ActiveSpeaker.ActiveSpeakerUp:
 
-            case ActiveSpeaker.ActiveSpeakerDown:
-                activeSpeaker = ActiveSpeaker.ActiveSpeakerUp;
-                Invoke("DisplayText", 0);
-                break;
+                    activeSpeaker = ActiveSpeaker.ActiveSpeakerDown;
+                    Invoke("DisplayText", 0);
+                    break;
 
+                case ActiveSpeaker.ActiveSpeakerDown:
+                    activeSpeaker = ActiveSpeaker.ActiveSpeakerUp;
+                    Invoke("DisplayText", 0);
+                    break;
+
+            }
         }
     }
 
     public void DisplayText()
     {
-        switch (activeSpeaker)
+        if (textSpeakerUp.text == "*Raccroche*")
         {
-            case ActiveSpeaker.ActiveSpeakerUp:
-                indexSpeakerUp += 2;
-                print(indexSpeakerUp);
-                textSpeakerDown.text = " ";
-                StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
-                Invoke("ChangeSpeaker",timerBeforeChangingDialog);
-                break;
-
-            case ActiveSpeaker.ActiveSpeakerDown:
-                indexSpeakerDown += 2;
-                print(indexSpeakerDown);
-                textSpeakerUp.text = " ";
-                StartCoroutine(TestTextDefile(textSpeakerDown, storyGrid[15, indexSpeakerDown], textSpeedSpeakerDown));
-                Invoke("ChangeSpeaker", timerBeforeChangingDialog);
-                break;
-
+            CancelInvoke("ChangeSpeaker");
+            textSpeakerUp.text = " ";
+            textSpeakerDown.text = " ";
+            print("Fin de l'histoire");
+            activeSpeaker = ActiveSpeaker.NoActiveSpeaker;
+            //ajouter son raccroche
+            //calculer score
         }
-    }
-}
+        
+        if (textSpeakerDown.text == "*Raccroche*")
+        {
+            CancelInvoke("ChangeSpeaker");
+            textSpeakerUp.text = " ";
+            textSpeakerDown.text = " ";
+            print("Fin de l'histoire");
+            activeSpeaker = ActiveSpeaker.NoActiveSpeaker;
+            //calculer score
+        }
+               switch (activeSpeaker)
+                {
+                    case ActiveSpeaker.ActiveSpeakerUp:
+                        {
+                            indexSpeakerUp += 2;
+                            textSpeakerDown.text = " ";
+                            StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
+                            Invoke("ChangeSpeaker", timerBeforeChangingDialog);
+                            break;
+                        }
 
+                    case ActiveSpeaker.ActiveSpeakerDown:
+                        {
+                            indexSpeakerDown += 2;
+                            textSpeakerUp.text = " ";
+                            StartCoroutine(TestTextDefile(textSpeakerDown, storyGrid[15, indexSpeakerDown], textSpeedSpeakerDown));
+                            Invoke("ChangeSpeaker", timerBeforeChangingDialog);
+                            break;
+                        }
+                }
+            }
+        }
+ 
 

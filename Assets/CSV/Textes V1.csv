@@ -13,6 +13,7 @@ Bouquet émissaire;A1;3;Alban;Traître;Dimitri;Cyrillique;0,2;moyenne;Non;Vendeu
 ;;;;;;;;;;;;;;;Laissez le bouquet dans l'épicerie centrale de Yakimanka, au nom d'Esmera Tarkhov. Ma belle-mère ira le chercher là-bas.;1;4
 ;;;;;;;;;;;;;;;Mais, vous la disiez souffrante...;-1;2
 ;;;;;;;;;;;;;;;Son mari viendra chercher le bouquet. ;-1;2
+;;;;;;;;;;;;;;;*Raccroche*;;
 Venise;P1;2;Polina;Traître;Boris;Cyrillique;normale (on entrera les valeurs plus tard);moyenne;Non;Employée d'une agence de voyages;Cyrillique;normale;moyenne;Non;Bonjour ! Agence de voyages « Intourist », comment puis-je vous aider ?;0;3
 ;;;;;;;;;;;;;;;Bonjour ! J'ai besoin d'un voyage organisé pour Venise : une chambre d'hôtel pour trois jours avec vue sur le Pont des Soupirs. ;1;4
 ;;;;;;;;;;;;;;;D'accord, est-ce que les dates du 4 au 7 février vous conviennent ? Vous partez pour le Carnaval de Venise, c'est bien ça ?;1;4
