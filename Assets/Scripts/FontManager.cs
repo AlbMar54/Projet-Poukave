@@ -19,7 +19,7 @@ public class FontManager : MonoBehaviour
     {
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
         //print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
-        Invoke("GivingTextFont", 0);
+        GivingTextFont();
 
     }
 

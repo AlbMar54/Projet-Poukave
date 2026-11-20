@@ -10,30 +10,41 @@ public class StoryManager : MonoBehaviour
     public TextAsset storycsv;
     public TextMeshProUGUI textSpeakerUp;
     public TextMeshProUGUI textSpeakerDown;
-    public float textSpeedSpeakerUp;
-    public float textSpeedSpeakerDown; //pour le testing
+    float textSpeedSpeakerUp;
+    float textSpeedSpeakerDown; //pour le testing
     string[,] storyGrid;
     //float textSpeedSpeakerUp;
     //float textSpeedSpeakerDown;
-    public RectTransform rectTransformTextSpeakerUp;
-    public RectTransform rectTransformTextSpeakerDown;
-    int indexSpeakerUp = 1;
-    int indexSpeakerDown = 0;
+    int indexSpeakerUp;
+    int indexSpeakerDown;
     float timerBeforeChangingDialog;
+    int randomStory;
+    int randomStoryIndex;
+    List<int> storyIndexList =new List<int>();
     ActiveSpeaker activeSpeaker = ActiveSpeaker.ActiveSpeakerUp;
 
     // Start is called before the first frame update
     void Start()
     {
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
-        //print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
+        print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
+        textSpeakerUp.text = "";
         textSpeakerDown.text = " ";
-        //textSpeedSpeakerUp = float.Parse(storyGrid[17,1]);
-        //textSpeedSpeakerDown = float.Parse(storyGrid[12,1]); //pour convertir un string en float
-        timerBeforeChangingDialog = float.Parse(storyGrid[17,2]);
-        StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
-        Invoke("ChangeSpeaker", timerBeforeChangingDialog);
-                
+        
+        for (int i = 1; i < storyGrid.GetLength(1); i++)
+        {
+            if (storyGrid[0, i] != "")
+            {
+                storyIndexList.Add(i);
+            }
+
+        }
+        foreach (int storyIndex in storyIndexList)
+        {
+            print(storyIndex);
+        }
+        
+        ChangeStory();
     }
 
     // Update is called once per frame
@@ -51,37 +62,67 @@ public class StoryManager : MonoBehaviour
             textMeshProUGUI.text += character;
             yield return new WaitForSeconds(delayDuration);
         }
+        ChangeSpeaker();
     }
     public void ChangeSpeaker()
     {
-        
+               
         {
             switch (activeSpeaker)
             {
                 case ActiveSpeaker.ActiveSpeakerUp:
 
                     activeSpeaker = ActiveSpeaker.ActiveSpeakerDown;
-                    Invoke("DisplayText", 0);
+                    indexSpeakerUp += 2;
+                    DisplayText();
                     break;
 
                 case ActiveSpeaker.ActiveSpeakerDown:
                     activeSpeaker = ActiveSpeaker.ActiveSpeakerUp;
-                    Invoke("DisplayText", 0);
+                    indexSpeakerDown += 2;
+                    DisplayText();
                     break;
 
             }
         }
     }
 
+    
+    public void ChangeStory()
+    {
+        randomStoryIndex = UnityEngine.Random.Range(0, storyIndexList.Count);
+        //print(randomStoryIndex);
+        randomStory = storyIndexList[randomStoryIndex];//c'est la LIGNE de l'histoire
+        //storyIndexList.RemoveAt(randomStory);
+        //print(randomStory);
+        indexSpeakerUp = randomStory;
+        indexSpeakerDown = randomStory +1;//psq le locuteur du bas commence une ligne en dessous
+        //print(indexSpeakerDown);
+        //print(storyGrid.GetLength(0)+" "+ storyGrid.GetLength(1));
+        //print(storyGrid[12, indexSpeakerDown]);
+        textSpeedSpeakerUp = float.Parse(storyGrid[7, indexSpeakerUp]);
+        textSpeedSpeakerDown = float.Parse(storyGrid[12, indexSpeakerDown]);
+        DisplayText();
+                
+    }
     public void DisplayText()
     {
+        
+        
         if (textSpeakerUp.text == "*Raccroche*")
         {
             CancelInvoke("ChangeSpeaker");
             textSpeakerUp.text = " ";
             textSpeakerDown.text = " ";
-            print("Fin de l'histoire");
+            print("Fin de l'histoire, appuyez sur ENTRER");
             activeSpeaker = ActiveSpeaker.NoActiveSpeaker;
+            if (Input.GetKey(KeyCode.KeypadEnter))
+                {
+                //ChangeStory();
+                }
+
+
+
             //ajouter son raccroche
             //calculer score
         }
@@ -95,27 +136,39 @@ public class StoryManager : MonoBehaviour
             activeSpeaker = ActiveSpeaker.NoActiveSpeaker;
             //calculer score
         }
-               switch (activeSpeaker)
+               
+        switch (activeSpeaker)
                 {
                     case ActiveSpeaker.ActiveSpeakerUp:
                         {
-                            indexSpeakerUp += 2;
-                            textSpeakerDown.text = " ";
+                            //print("ACTIVE UP SPEAKER INDEX DANS JEU");
+                            //print(indexSpeakerUp);
+                            //timerBeforeChangingDialog = float.Parse(storyGrid[17, indexSpeakerUp]);
+                    
                             StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
-                            Invoke("ChangeSpeaker", timerBeforeChangingDialog);
+                            
+                            textSpeakerDown.text = " ";
+                            //Invoke("ChangeSpeaker", timerBeforeChangingDialog);
                             break;
                         }
 
                     case ActiveSpeaker.ActiveSpeakerDown:
                         {
-                            indexSpeakerDown += 2;
-                            textSpeakerUp.text = " ";
+                            //print("ACTIVE DOWN SPEAKER INDEX DANS JEU");
+                            //print(indexSpeakerDown);
+                             //timerBeforeChangingDialog = float.Parse(storyGrid[17, indexSpeakerDown]);
                             StartCoroutine(TestTextDefile(textSpeakerDown, storyGrid[15, indexSpeakerDown], textSpeedSpeakerDown));
-                            Invoke("ChangeSpeaker", timerBeforeChangingDialog);
+                            textSpeakerUp.text = " ";
+                            //Invoke("ChangeSpeaker", timerBeforeChangingDialog);
                             break;
                         }
                 }
             }
-        }
+
+    
+}
+
+
+
  
 
