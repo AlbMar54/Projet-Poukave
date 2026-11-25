@@ -14,12 +14,13 @@ public class FontManager : MonoBehaviour
     string wantedFontUp;
     string wantedFontDown;
     string[,] storyGrid;
+    public StoryManager storyManager;
     // Start is called before the first frame update
     void Start()
     {
         storyGrid = CSVReader.SplitCsvGrid(storycsv.text);
         //print(storyGrid.GetLength(0) + " " + storyGrid.GetLength(1));
-        GivingTextFont();
+        
 
     }
 
@@ -30,9 +31,9 @@ public class FontManager : MonoBehaviour
 
     }
 
-    public void GivingTextFont()
+    public void GivingTextFont(int randomStory)
     {
-        wantedFontUp = storyGrid[6, 1]; //à remplacer par un paramètre index
+        wantedFontUp = storyGrid[6, randomStory]; //à remplacer par un paramètre index
         if (wantedFontUp == "Cyrillique")
         {
             textSpeakerUp.font = russianFont;
@@ -43,7 +44,7 @@ public class FontManager : MonoBehaviour
             textSpeakerUp.font = germanFont;
         }
 
-        wantedFontDown = storyGrid[11, 1]; //à remplacer par un paramètre index
+        wantedFontDown = storyGrid[11, randomStory]; //à remplacer par un paramètre index
         if (wantedFontUp == "Cyrillique")
         {
             textSpeakerDown.font = russianFont;
