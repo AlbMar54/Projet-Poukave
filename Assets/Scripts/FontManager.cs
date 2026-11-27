@@ -33,7 +33,10 @@ public class FontManager : MonoBehaviour
 
     public void GivingTextFont(int randomStory)
     {
-        wantedFontUp = storyGrid[6, randomStory]; //à remplacer par un paramètre index
+        wantedFontUp = storyGrid[6, randomStory];
+        wantedFontDown = storyGrid[11, randomStory];
+
+
         if (wantedFontUp == "Cyrillique")
         {
             textSpeakerUp.font = russianFont;
@@ -44,7 +47,12 @@ public class FontManager : MonoBehaviour
             textSpeakerUp.font = germanFont;
         }
 
-        wantedFontDown = storyGrid[11, randomStory]; //à remplacer par un paramètre index
+        else
+        {
+            textSpeakerUp.font = germanFont;
+        }
+
+       ; //à remplacer par un paramètre index
         if (wantedFontUp == "Cyrillique")
         {
             textSpeakerDown.font = russianFont;
@@ -54,5 +62,10 @@ public class FontManager : MonoBehaviour
         {
             textSpeakerDown.font = germanFont;
         }
-    }
+
+        else
+        {
+            textSpeakerDown.font = germanFont;
+        }
+        }
 }

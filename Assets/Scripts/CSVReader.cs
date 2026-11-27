@@ -13,6 +13,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Linq;
+using System;
 
 public class CSVReader : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class CSVReader : MonoBehaviour
     static public string[,] SplitCsvGrid(string csvText)
     {
         string[] lines = csvText.Split("\n"[0]);
+        //Array.Resize(ref lines, lines.Length - 1);
 
         // finds the max width of row
         int width = 0;

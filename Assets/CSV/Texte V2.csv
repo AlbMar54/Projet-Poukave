@@ -1,37 +1,163 @@
-Nom de l'Histoire;Code (1re lettre de votre prénom + numéro de l'histoire);Chambre(s) n° (sur les 12);Auteur/rice;Vrai camarade ou traître ?;Nom interlocuteur A;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Nom interlocuteur B;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Textes;Longueur de la phrase (0 si moyen, 1 si long, -1 si c'est court);Durée en temps (inutile d'écrire);
-Bouquet émissaire;A1;1;Alban;Traître;Dimitri;Cyrillique;0,15;moyenne;Non;Vendeur de fleurs;Cyrillique;0,15;moyenne;Non;Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?;0;3;
-;;;;;;;0,15;;;;;0,15;;;Bonjour, alors voilà, ma belle-mère est assez souffrante et manque de compagnie. J'aurais souhaité lui faire parvenir un petit réconfort. Je ne sais pas si vous assurez des livraisons ?;1;4;
-;;;;;;;;;;;;;;;Dans Moscou intra-muros uniquement, où habite votre belle-mère ?;-1;2;3
-;;;;;;;;;;;;;;;Dans le sud-est de Yakimanka. Vous pouvez-vous en charger ?;0;3;2
-;;;;;;;;;;;;;;;Tout à fait, monsieur. Vous avez une idée précise de ce que vous souhaitez ?;0;3;5
-;;;;;;;;;;;;;;;Un bouquet avec quatre couleurs différentes. Peu importe les variétés de fleurs, seules les couleurs importent. Il me faudrait du jaune, du violet, du rouge et du noir. ;1;4;4
-;;;;;;;;;;;;;;;Hum, Monsieur, je vous recommande pas le noir, historiquement, ça ne se fait pas d'offrir des fleurs noires à un malade. Certains y voient un mauvais présage.;1;4;6
-;;;;;;;;;;;;;;;Peu m'importe Monsieur, ça a toujours été sa couleur préférée.;-1;2;7
-;;;;;;;;;;;;;;;Comme il vous plaira. Je peux vous préparer quelques suggestions de bouquets d'ici à deux petites heures. Il ne vous restera plus qu'à passer à la boutique pour valider votre choix et on s'occupe du reste.;1;4;
-;;;;;;;;;;;;;;;Je préfère ne pas me rendre au centre ville. Ma belle-mère a des goûts douteux, n'importe quel bouquet lui fera plaisir. Ne tardez pas trop, vous avez normalement déjà reçu vos honoraires par la poste ce matin.;1;4;
-;;;;;;;;;;;;;;;... Comme vous voudrez. Livraison à quel nom et adresse ?;-1;2;
-;;;;;;;;;;;;;;;Laissez le bouquet dans l'épicerie centrale de Yakimanka, au nom d'Esmera Tarkhov. Ma belle-mère ira le chercher là-bas.;1;4;
-;;;;;;;;;;;;;;;Mais, vous la disiez souffrante...;-1;2;
-;;;;;;;;;;;;;;;Son mari viendra chercher le bouquet. ;-1;2;
-;;;;;;;;;;;;;;;*Raccroche*;;;
-Venise;P1;2;Polina;Traître;Boris;Cyrillique;0,15;moyenne;Non;Employée d'une agence de voyages;Cyrillique;0,15;moyenne;Non;Bonjour ! Agence de voyages « Intourist », comment puis-je vous aider ?;0;3;
-;;;;;;;0,15;;;;;0,15;;;Bonjour ! J'ai besoin d'un voyage organisé pour Venise : une chambre d'hôtel pour trois jours avec vue sur le Pont des Soupirs. ;1;4;
-;;;;;;;;;;;;;;;D'accord, est-ce que les dates du 4 au 7 février vous conviennent ? Vous partez pour le Carnaval de Venise, c'est bien ça ?;1;4;
-;;;;;;;;;;;;;;;Oui, tout à fait, c'est précisément là que je vais.;-1;2;
-;;;;;;;;;;;;;;;Dites-moi, s'il vous plaît, vous avez besoin d'une chambre pour une ou deux personnes ?;1;4;
-;;;;;;;;;;;;;;;Pour deux, je pars avec mon épouse.;-1;2;
-;;;;;;;;;;;;;;;C'est noté, je vous ai réservé la chambre. Est-ce que je peux faire autre chose pour vous ?;0;3;
-;;;;;;;;;;;;;;;Oui, il me faudra aussi deux gondoles et deux porteurs... Vous avez des porteurs qui parlent russe ?;0;3;
-;;;;;;;;;;;;;;;Malheureusement non, nous n'en avons pas.;-1;2;
-;;;;;;;;;;;;;;;Tant mieux !;-1;2;
-;;;;;;;;;;;;;;;*Raccroche*;;;
-La ballerine Katia;P2;3;Polina;vrai camarade;Katia;Cyrillique;0,15;moyenne;Non;une amie sans nom;Cyrillique;0,15;moyenne;Non;Bonjour Katia ! Comment que ça va ?;-1;2;
-;;;;;;;0,15;;;;;0,15;;;Salut, salut ! Ça va, tranquille. Tu es à Moscou en ce moment ?;-1;2;
-;;;;;;;;;;;;;;;Oui, je danse au Bolchoï aujourd'hui. Après le spectacle, j'ai rendez-vous avec Vassili.;0;3;
-;;;;;;;;;;;;;;;Mais tu n'avais pas rompu avec lui ?;-1;2;
-;;;;;;;;;;;;;;;Si, mais c'est la dernière fois qu'on se voit. Promis.;-1;2;
-;;;;;;;;;;;;;;;Mais il voulait émigrer, non ? ;-1;2;
-;;;;;;;;;;;;;;;Oui, on dirait bien.;-1;2;
-;;;;;;;;;;;;;;;Et tu ne veux pas partir avec lui ?;-1;2;
-;;;;;;;;;;;;;;;Non, j'adore le Bolchoï, j'adore le ballet russe ! Je ne pourrai jamais vivre sans tout ça !;0;3;
-;;;;;;;;;;;;;;;*Raccroche*;;;
+Nom de l'Histoire;Difficulté (1 -3);Chambre(s) n° (sur les 12);Auteur/rice;Vrai camarade ou traître ?;Nom interlocuteur A;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Nom interlocuteur B;Police d'écriture;Vitesse défilement;Taille de police;Interférence ?;Textes;Longueur de la phrase (0 si moyen, 1 si long, -1 si c'est court);Durée en temps (inutile d'écrire);;Durée de l'histoire
+Bouquet émissaire;1;1;Alban;Traître;Dimitri;Cyrillique;0,15;moyenne;Non;Vendeur de fleurs;Cyrillique;0,15;moyenne;Non;Bonjour, vous êtes bien à La Flore de Dostoïevski, comment puis-je vous aider ?;0;4;;57
+;;;;;;;0,15;;;;;0,15;;;Bonjour, alors voilà, ma belle-mère est assez souffrante et manque de compagnie. J'aurais souhaité lui faire parvenir un petit réconfort. Je ne sais pas si vous assurez des livraisons ?;1;5;;
+;;;;;;;;;;;;;;;Dans Moscou intra-muros uniquement, où habite votre belle-mère ?;-1;3;3;
+;;;;;;;;;;;;;;;Dans le sud-est de Yakimanka. Vous pouvez-vous en charger ?;0;4;2;
+;;;;;;;;;;;;;;;Tout à fait, monsieur. Vous avez une idée précise de ce que vous souhaitez ?;0;4;5;
+;;;;;;;;;;;;;;;Un bouquet avec quatre couleurs différentes. Peu importe les variétés de fleurs, seules les couleurs importent. Il me faudrait du jaune, du violet, du rouge et du noir. ;1;5;4;
+;;;;;;;;;;;;;;;Hum, Monsieur, je vous recommande pas le noir, historiquement, ça ne se fait pas d'offrir des fleurs noires à un malade. Certains y voient un mauvais présage.;1;5;6;
+;;;;;;;;;;;;;;;Peu m'importe Monsieur, ça a toujours été sa couleur préférée.;-1;3;7;
+;;;;;;;;;;;;;;;Comme il vous plaira. Je peux vous préparer quelques suggestions de bouquets d'ici à deux petites heures. Il ne vous restera plus qu'à passer à la boutique pour valider votre choix et on s'occupe du reste.;1;5;;
+;;;;;;;;;;;;;;;Je préfère ne pas me rendre au centre ville. Ma belle-mère a des goûts douteux, n'importe quel bouquet lui fera plaisir. Ne tardez pas trop, vous avez normalement déjà reçu vos honoraires par la poste ce matin.;1;5;;
+;;;;;;;;;;;;;;;... Comme vous voudrez. Livraison à quel nom et adresse ?;-1;3;;
+;;;;;;;;;;;;;;;Laissez le bouquet dans l'épicerie centrale de Yakimanka, au nom d'Esmera Tarkhov. Ma belle-mère ira le chercher là-bas.;1;5;;
+;;;;;;;;;;;;;;;Mais, vous la disiez souffrante...;-1;3;;
+;;;;;;;;;;;;;;;Son mari viendra chercher le bouquet. ;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+Venise;2;2;Polina;Traître;Boris;Manic Germanic;0,15;moyenne;Non;Employée d'une agence de voyages;Cyrillique;0,15;moyenne;Non;Bonjour ! Agence de voyages « Intourist », comment puis-je vous aider ?;0;4;;39
+;;;;;;;0,15;;;;;0,15;;;Bonjour ! J'ai besoin d'un voyage organisé pour Venise : une chambre d'hôtel pour trois jours avec vue sur le Pont des Soupirs. ;1;5;;
+;;;;;;;;;;;;;;;D'accord, est-ce que les dates du 4 au 7 février vous conviennent ? Vous partez pour le Carnaval de Venise, c'est bien ça ?;1;5;;
+;;;;;;;;;;;;;;;Oui, tout à fait, c'est précisément là que je vais.;-1;3;;
+;;;;;;;;;;;;;;;Dites-moi, s'il vous plaît, vous avez besoin d'une chambre pour une ou deux personnes ?;1;5;;
+;;;;;;;;;;;;;;;Pour deux, je pars avec mon épouse.;-1;3;;
+;;;;;;;;;;;;;;;C'est noté, je vous ai réservé la chambre. Est-ce que je peux faire autre chose pour vous ?;0;4;;
+;;;;;;;;;;;;;;;Oui, il me faudra aussi deux gondoles et deux porteurs... Vous avez des porteurs qui parlent russe ?;0;4;;
+;;;;;;;;;;;;;;;Malheureusement non, nous n'en avons pas.;-1;3;;
+;;;;;;;;;;;;;;;Tant mieux !;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+La ballerine Katia;1;3;Polina;vrai camarade;Katia;The Garden of Lights;0,15;moyenne;Non;une amie sans nom;Cyrillique;0,15;moyenne;Non;Bonjour Katia ! Comment que ça va ?;-1;3;;29
+;;;;;;;0,15;;;;;0,15;;;Salut, salut ! Ça va, tranquille. Tu es à Moscou en ce moment ?;-1;3;;
+;;;;;;;;;;;;;;;Oui, je danse au Bolchoï aujourd'hui. Après le spectacle, j'ai rendez-vous avec Vassili.;0;4;;
+;;;;;;;;;;;;;;;Mais tu n'avais pas rompu avec lui ?;-1;3;;
+;;;;;;;;;;;;;;;Si, mais c'est la dernière fois qu'on se voit. Promis.;-1;3;;
+;;;;;;;;;;;;;;;Mais il voulait émigrer, non ? ;-1;3;;
+;;;;;;;;;;;;;;;Oui, on dirait bien.;-1;3;;
+;;;;;;;;;;;;;;;Et tu ne veux pas partir avec lui ?;-1;3;;
+;;;;;;;;;;;;;;;Non, j'adore le Bolchoï, j'adore le ballet russe ! Je ne pourrai jamais vivre sans tout ça !;0;4;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+La loterie du parti;2;4;Valentin;Vrai camarade;Maximov;Cyrillique;0,15;moyenne;Non;Igor;Cyrillique;0,15;moyenne;Non;Camarade Igor ! Je t'ai attendu toute la journée ! Tu as les numéros gagnants ?;0;4;;44
+;;;;;;;0,15;;;;;0,15;;;Sept....Douze....Quatre...Huit et Ving-et-Un.;-1;3;;
+;;;;;;;;;;;;;;;Huit ? Vraiment ?!;-1;3;;
+;;;;;;;;;;;;;;;Oui...Huit, Maximov.;-1;3;;
+;;;;;;;;;;;;;;;Mishka va en craquer son porte-jartelles. J'ai mis neuf, putain.;0;4;;
+;;;;;;;;;;;;;;;Neuf ? Tu es un imbécile. Le neuf porte malheur. ;0;4;;
+;;;;;;;;;;;;;;;Nikolaï a mis le onze, au lieu du douze. Il a perdu, mais c'est lui qui risque d'avoir l'appartement donné par le parti.;1;5;;
+;;;;;;;;;;;;;;;Ça me fait une belle jambe. Tu sais que j'en avais besoin. Le mien est un taudis, il se dégrade à vu d'oeil...;0;4;;
+;;;;;;;;;;;;;;;Ouais, il n'y a pas que ton appart qui se dégrade.... CAMARADE.;-1;3;;
+;;;;;;;;;;;;;;;Quoi ? J'ai pas entendu. Répète ?;-1;3;;
+;;;;;;;;;;;;;;;J'ai dit que je pense déménager à Volgograd. Bref, dasvidania.;1;5;;
+;;;;;;;;;;;;;;;Dasvidania, saleté. ;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+Un enfant studieux;2;5;Nolwen;Vrai camarade;Nikolaï;Germany Slime Gothic;0,15;Lent;Non;Anna;Cyrillique;0,15;Moyenne;Non;Bonjour Anna, c’est Nikolaï. Je t’appelle pour te dire que je suis bien arrivé à Moscou.;0;4;;41
+;;;;;;;0,15;;;;;0,15;;;Bonjour Nikolaï, comment vas-tu ? Le voyage s’est bien passé ?;-1;3;;
+;;;;;;;;;;;;;;;Très bien ! Je t’appelle aussi pour prendre des nouvelles du petit Pietro. Comment ça va ?;0;4;;
+;;;;;;;;;;;;;;;Oh, il va très bien !;-1;3;;
+;;;;;;;;;;;;;;;Et à l’école ?;-1;3;;
+;;;;;;;;;;;;;;;Ah oui, à l’école… Il a de très bonnes notes, tu sais. Il a eu un 12 en mathématique !;0;4;;
+;;;;;;;;;;;;;;;Ah, tant mieux ! Il tient bien de son père, ce petit. Je pourrais lui parler ?;0;4;;
+;;;;;;;;;;;;;;;Désolée, il est en train de manger ses pelmenis. Je ne voudrais pas le déranger. Tu sais, il est très fatigué en ce moment avec l’école et tout…;1;5;;
+;;;;;;;;;;;;;;;Ce n’est pas grave, laisse-le un peu tranquille, ce petit ! Qu’il reprenne des forces et qu’il continue à bien travailler à l’école. Il ira loin un jour ! Je te rappellerai quand je serai arrivé à Minsk. A bientôt !;1;5;;
+;;;;;;;;;;;;;;;Pas de souci, à bientôt Nikolaï !;-1;3;;
+;;;;;;;;;;;;;;;À bientôt !;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+Pomme de terre pourrie;3;6;Polina;Vrai camarade;Valia;Cyrillique;0,15;moyenne;Non;Copin;Cyrillique;0,15;Moyenne;Non;Bref, je suis allée au magasin. Toutes les patates étaient pourries ! Comme d’habitude ! Je voulais faire le tri, et la vendeuse m’a crié dessus : pas question de choisir, faut prendre tout ce qui vient ! Y compris les pourries !;1;5;;36
+;;;;;;;0,15;;;;;0,15;;;Non mais c’est pas vrai ! T’aurais dû l’envoyer se faire foutre !;0;4;;
+;;;;;;;;;;;;;;;J’ai perdu mes moyens, elle m’a hurlé dessus ! Elle m’a traitée de vieille peau ! Elle a dit que j’étais une traître à la patrie sous prétexte que je voulais pas de ses patates pourries ! ;1;5;;
+;;;;;;;;;;;;;;;Oh non!;-1;3;;
+;;;;;;;;;;;;;;;Résultat, on m’a dégagée du comptoir et j’ai absolument rien pu acheter ! Et j’avais fait la queue depuis le matin ! Trois heures que je poireautais dans cette putain de file depuis potron-minet ! Tout ça pour des patates pourries sans même pouvoir choisir ! Quels connards ! Il leur faudrait une bonne purge, à ces gens-là !;1;5;;
+;;;;;;;;;;;;;;;Chut, tais-toi, mais qu’est-ce que tu racontes…;-1;3;;
+;;;;;;;;;;;;;;;Je dis tout haut ce que je pense. Tiens, hier, j’ai essayé d’acheter des bottes pour mon mari. Rien, les rayons sont vides.;0;4;;
+;;;;;;;;;;;;;;;Valia, tu devrais vraiment pas dire des choses pareilles…;-1;3;;
+;;;;;;;;;;;;;;;Si Grigori Vissarionovitch était encore de ce monde, ça filerait droit ! Mais là, c’est quoi ce bordel ?! Pff, la honte !;0;4;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+Les marchandises perdue;3;7;Nolwen;Traître;Ivan;Metal Gothic - Demo Version;0,2;Grande;non;Patron;Victoria Typewriter;0,15;normale;Non;... ... ... ;-1;3;;66
+;;;;;;;0,2;;;;;0,15;;;Allô ???;-1;3;;
+;;;;;;;;;;;;;;;ALLÔ ? VOUS M’ENTENDEZ ?;-1;3;;
+;;;;;;;;;;;;;;;Pas très bien…;-1;3;;
+;;;;;;;;;;;;;;;ALLÔ PATRON VOUS ÊTES LA ?;;4;;
+;;;;;;;;;;;;;;;Qu'est-ce qu'il y a encore Ivan ?;0;4;;
+;;;;;;;;;;;;;;;Je t’ai déjà dit de ne pas m’appeler ici. C’est trop risqué.;0;4;;
+;;;;;;;;;;;;;;;... ON A UN PROBLEME PATRON ...;0;4;;
+;;;;;;;;;;;;;;;Lequel encore ?;;4;;
+;;;;;;;;;;;;;;;ON A PERDU LA MARCHANDISE… PENDANT LA TEMPÊTE…;;4;;
+;;;;;;;;;;;;;;;COMMENT ÇA ? J’ESPÈRE QUE TU RIGOLES LÀ ?;0;4;;
+;;;;;;;;;;;;;;;… DÉSOLÉ PATRON…;0;4;;
+;;;;;;;;;;;;;;;Attendez voir que j’arrive, ça sera retenu sur vos salaires ! Espèces d’idiots, je vous avais déjà dit de ne pas prendre la mer par risque de mauvais temps. Vous n’avez pas vu la météo ?!;1;5;;
+;;;;;;;;;;;;;;;… SI MAIS… ON VOUS A ENVOYÉ UN MESSAGE, CHEZ VOUS… MAIS SANS RÉPONSE DE VOTRE PART… ON EST PARTIS.;1;5;;
+;;;;;;;;;;;;;;;ET VOUS ÊTES INCAPABLES DE PRENDRE DES DÉCISIONS PAR VOUS-MÊMES ?? VOUS ALLEZ VOIR QUAND VOUS ALLEZ RENTRER…;1;5;;
+;;;;;;;;;;;;;;;JE VOUS ENTENDS MAL PATRON… JE VAIS DEVOIR RACCROCHER...;0;4;;
+;;;;;;;;;;;;;;;ATTENDS…;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+Datcha;3;8;Polina;Traître;anonyme 1;18thCentury;0,2;Petit;non;anonyme 2;18thCentury;0,15;normale;Non;Ce week-end, nous allons à la datcha.;-1;3;;49
+;;;;;;;0,2;;;;;0,15;;;Le 14 ?;-1;3;;
+;;;;;;;;;;;;;;;Oui, vers midi.;-1;3;;
+;;;;;;;;;;;;;;;Vous allez réserver une voiture ?;-1;3;;
+;;;;;;;;;;;;;;;Non, j'ai déjà un véhicule.;-1;3;;
+;;;;;;;;;;;;;;;Vous prenez toutes vos affaires ?;-1;3;;
+;;;;;;;;;;;;;;;Oui, oui.;-1;3;;
+;;;;;;;;;;;;;;;Les meubles ? Les appareils ?;-1;3;;
+;;;;;;;;;;;;;;;Pas de meubles ni d’appareils. Seulement le strict nécessaire.;0;4;;
+;;;;;;;;;;;;;;;La dernière fois, tu ne prenais aussi que le strict nécessaire. Pas de meubles, pas d'appareils. Et après, tu te plaignais qu'il te manquait plein de choses.;1;5;;
+;;;;;;;;;;;;;;;Oui, mais... cette fois-ci... ce n'est pas pour longtemps.;0;4;;
+;;;;;;;;;;;;;;;Longtemps ou pas, tu dois comprendre que ça influe… sur beaucoup de choses. Nos camarades doivent être satisfaits de toi.;1;5;;
+;;;;;;;;;;;;;;;Je fais tout ce qui est en mon pouvoir.;0;4;;
+;;;;;;;;;;;;;;;Fais plus.;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+L'expédition;2;9;Nolwen;Vrai camarade;Igor;Normal;0,15;Normal;non;Lioudmila;Normal;0,15;Normal;Non;Prête pour notre expédition de demain ?;0;4;;50
+;;;;;;;0,15;;;;;0,15;;;Oui, j’ai tellement hâte, même si le trajet risque d’être long.;0;4;;
+;;;;;;;;;;;;;;;Tu as bien préparé toutes tes affaires pour la montée ? N’oublie pas qu’il va faire très froid.;0;4;;
+;;;;;;;;;;;;;;;Oui, tout est prêt !;-1;3;;
+;;;;;;;;;;;;;;;D’accord. Donc, pour résumer : rendez-vous à la gare à 8 h. Iouri passera te chercher avec les autres à 7 h, alors tiens-toi prête. Le train pour Ivdel part à 8 h 28.;1;5;;
+;;;;;;;;;;;;;;;Au fait, tu as regardé la météo ?;0;4;;
+;;;;;;;;;;;;;;;Oui, ils annoncent de fortes chutes de neige pour les prochains jours.;1;5;;
+;;;;;;;;;;;;;;;Super… Ça promet !;-1;3;;
+;;;;;;;;;;;;;;;Ne t'inquiète pas, on est bien préparés. Iouri connaît le secteur.;0;4;;
+;;;;;;;;;;;;;;;Tant mieux ! Bon, je vais essayer de dormir un peu. On a une grosse journée demain !;0;4;;
+;;;;;;;;;;;;;;;Tu as raison. Repose-toi bien, on se retrouve demain matin.;0;4;;
+;;;;;;;;;;;;;;;Bonne nuit !;-1;3;;
+;;;;;;;;;;;;;;;Bonne nuit… et à demain.;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+oncle;1;10;Polina;Traître;anonyme 1;Normal;0,15;petit;non;anonyme 2;Cyrillique;0,15;Normal;Non;Le manuscrit que je t'ai donné... Tu l'as lu ?;-1;3;;43
+;;;;;;;0,15;;;;;0,15;;;Oui, je l'ai lu, mais... Tu vois... Dans ce text... Il y a tellement de choses effrayantes que c'est difficile d'y croire.;0;4;;
+;;;;;;;;;;;;;;;Mais c'est la vérité.;-1;3;;
+;;;;;;;;;;;;;;;Peut-être, peut-être. Mais si ton oncle était contre le communisme, alors...;0;4;;
+;;;;;;;;;;;;;;;Non, c'était un vrai communiste !;-1;3;;
+;;;;;;;;;;;;;;;Et pourtant, ils l'ont arrêté...;-1;3;;
+;;;;;;;;;;;;;;;C'est une erreur ! Il était pour le Parti ! Il n'a trompé personne !;0;4;;
+;;;;;;;;;;;;;;;Écoute... évitons de parler de ça au téléphone...;-1;3;;
+;;;;;;;;;;;;;;;Mon oncle n'était coupable de rien. Pourquoi l'ont-ils envoyé au Goulag ?;0;4;;
+;;;;;;;;;;;;;;;Écoute... encore un mot, et ton oncle ne sera pas le seul à finir là-bas.;0;4;;
+;;;;;;;;;;;;;;;Qu'est-ce que tu veux dire ?;-1;3;;
+;;;;;;;;;;;;;;;Écoute, je n'ai vraiment pas le temps, là. On s'appelle plus tard, d'accord ? Pas tout de suite, un de ces quatre... J'ai un tas de trucs à régler et j'ai un déplacement professionnel qui se profile. En plus, ma femme m'appelle. Au revoir !;1;5;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+les Beatles;2;11;Polina;Traître;Macha;Normal;0,15;Normal;non;Nina;Cyrillique;0,15;Normal;Non;Salut Nina. Comment ça va ? Tu n'es pas obligée de répondre, je préfère te raconter ce qui m'arrive ! Tu n'imagines pas. J'ai envoyé la bonne réponse à la question d'une émission musicale. Je compte bien gagner un prix !;1;5;;53
+;;;;;;;0,15;;;;;0,15;;;C'est pas possible !;-1;3;;
+;;;;;;;;;;;;;;;Oui ! Tu te rends compte ? L'animateur a posé une question sur le groupe anglais The Beatles. Et je les écoute tous les jours !;1;5;;
+;;;;;;;;;;;;;;;Sans blague ? Où est-ce que tu as déniché cet enregistrement ?!;0;4;;
+;;;;;;;;;;;;;;;C'est un camarade de promo qui me l'a repiquée pour 2 roubles.;0;4;;
+;;;;;;;;;;;;;;;Macha, c'est interdit. On ne peut pas faire ça. ;-1;3;;
+;;;;;;;;;;;;;;;Pourquoi pas ?;-1;3;;
+;;;;;;;;;;;;;;;Franchement, c'est de la musique de pays capitalistes. Et le fait que tu l'aies copiée, en plus pour de l'argent... c'est un peu...;1;5;;
+;;;;;;;;;;;;;;;Oh, allez, tout le monde fait ça. Et maintenant, en plus, je vais gagner le concours.;0;4;;
+;;;;;;;;;;;;;;;C'est quoi ce concours de musique où l'on pose des questions sur les Beatles ? Je n'ai jamais rien vu de pareil à la télé.;1;5;;
+;;;;;;;;;;;;;;;Ce n'est pas la télé. C'est la radio, ça s'appelle « BBC ».;0;4;;
+;;;;;;;;;;;;;;;Macha, c'est une radio anglaise. Tu écoutes ça ?;0;4;;
+;;;;;;;;;;;;;;;Nina, j'ai l'impression d'être interrogée. Tu peux baisser d'un ton ? Personne ne nous écoute !;0;4;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;
+les Français;3;12;Polina;Traître;Larissa;Roman Antique;0,15;moyenne;non;Lenka;Cyrillique;0,15;moyenne;Non;Résultat, on m'a envoyée en stage dans une usine... et là-bas, y avait un groupe d'ingénieurs français qui concevaient l'usine. Bon, mon français, c'est pas trop ça, j'avais pris anglais à l'école.;1;5;;61
+;;;;;;;0,15;;;;;0,15;;;Mais comment tu leur parlais, alors ?;-1;3;;
+;;;;;;;;;;;;;;;J'ai tout de suite capté qu'avec les Français, y a que deux mots à retenir : « ça va, ça va ». Tu répètes ça en boucle, et c'est tout.;0;4;;
+;;;;;;;;;;;;;;;Alors, ils sont comment, les Français ? Ils sont mignons ?;0;4;;
+;;;;;;;;;;;;;;;Ah, c'est sûr ! Rien à voir avec nos ouvriers !;0;4;;
+;;;;;;;;;;;;;;;Tu t'es repérée quelqu'un là-bas ?;-1;3;;
+;;;;;;;;;;;;;;;Mais carrément ! J'en ai un en vue, moi.;0;4;;
+;;;;;;;;;;;;;;;Mais enfin, comment tu vas te marier ? Ils finissent tous par repartir en France, ces types...;0;4;;
+;;;;;;;;;;;;;;;Et ben, je vais y aller avec lui. Na !;-1;3;;
+;;;;;;;;;;;;;;;Larissa, comment tu vas faire pour y aller ?! Qu'est-ce que tu vas faire là-bas ?!;0;4;;
+;;;;;;;;;;;;;;;Je vais me balader dans Paris. Acheter des robes, boire du vin. Je ferai tout ce que je veux !;0;4;;
+;;;;;;;;;;;;;;;Et ta patrie, alors ?;-1;3;;
+;;;;;;;;;;;;;;;Et qu'est-ce qu'elle me fait, ma patrie ? Ça fait deux ans que je ne peux même pas m'acheter une paire de chaussures...;1;5;;
+;;;;;;;;;;;;;;;Tu compares des chaussures et la patrie...;-1;3;;
+;;;;;;;;;;;;;;;Lenka, tu peux rester ici, mais moi, je me barre. J'en ai marre d'acheter des patates pourries et d'attendre qu'on livre des bas au grand magasin...;1;5;;
+;;;;;;;;;;;;;;;Espèce d'idiote, va !;-1;3;;
+;;;;;;;;;;;;;;;*Raccroche*;;4;;

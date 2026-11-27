@@ -9,6 +9,7 @@ public class StoryManager : MonoBehaviour
 {
     public AnswerChecker answerChecker;
     public FontManager fontManager;
+    public SpriteChanger spriteChanger;
     public TextAsset storycsv;
     public TextMeshProUGUI textSpeakerUp;
     public TextMeshProUGUI textSpeakerDown;
@@ -34,15 +35,14 @@ public class StoryManager : MonoBehaviour
 
         for (int i = 1; i < storyGrid.GetLength(1); i++)
         {
-            if (storyGrid[0, i] != "")
+            if (storyGrid[0, i] != "" && storyGrid[0, i] != null)
             {
                 storyIndexList.Add(i);
             }
-
         }
         foreach (int storyIndex in storyIndexList)
         {
-            print(storyIndex);
+            print("Dans la liste : " + storyIndex);
         }
 
         ChangeStory();
@@ -62,6 +62,7 @@ public class StoryManager : MonoBehaviour
         {
             textMeshProUGUI.text += character;
             yield return new WaitForSeconds(delayDuration);
+            //mettre son dialogue
         }
         Invoke("ChangeSpeaker", 1);
     }
@@ -92,9 +93,7 @@ public class StoryManager : MonoBehaviour
     public void ChangeStory()
     {
         StopAllCoroutines();
-        //activeSpeaker = ActiveSpeaker.NoActiveSpeaker; A CONTINUER 
-        //textSpeakerUp.text = " ";
-        //textSpeakerDown.text = " ";
+        activeSpeaker = ActiveSpeaker.ActiveSpeakerUp;
         randomStoryIndex = UnityEngine.Random.Range(0, storyIndexList.Count);
         //print(randomStoryIndex);
         randomStory = storyIndexList[randomStoryIndex];//c'est la LIGNE de l'histoire
@@ -105,8 +104,7 @@ public class StoryManager : MonoBehaviour
         //print(indexSpeakerDown);
         //print(storyGrid.GetLength(0)+" "+ storyGrid.GetLength(1));
         //print(storyGrid[12, indexSpeakerDown]);
-        print("randomStory =");
-        print(randomStory);
+        print("randomStory =" + randomStory);
         textSpeedSpeakerUp = float.Parse(storyGrid[7, indexSpeakerUp]);
         textSpeedSpeakerDown = float.Parse(storyGrid[12, indexSpeakerDown]);
         textSpeedSpeakerUp = textSpeedSpeakerDown / 10; // à retirer après testing
@@ -122,6 +120,7 @@ public class StoryManager : MonoBehaviour
 
         if (textSpeakerUp.text == "*Raccroche*")
         {
+            StopAllCoroutines();
             CancelInvoke("ChangeSpeaker");
             textSpeakerUp.text = " ";
             textSpeakerDown.text = " ";
@@ -140,6 +139,7 @@ public class StoryManager : MonoBehaviour
 
         if (textSpeakerDown.text == "*Raccroche*")
         {
+            StopAllCoroutines();
             CancelInvoke("ChangeSpeaker");
             textSpeakerUp.text = " ";
             textSpeakerDown.text = " ";
@@ -152,15 +152,16 @@ public class StoryManager : MonoBehaviour
         {
             case ActiveSpeaker.ActiveSpeakerUp:
                 {
+                   StopAllCoroutines();
                    StartCoroutine(TestTextDefile(textSpeakerUp, storyGrid[15, indexSpeakerUp], textSpeedSpeakerUp));
-                    textSpeakerDown.text = " ";
+                   textSpeakerDown.text = " ";
                     
                     break;
                 }
 
             case ActiveSpeaker.ActiveSpeakerDown:
                 {
-                    
+                    StopAllCoroutines();
                     StartCoroutine(TestTextDefile(textSpeakerDown, storyGrid[15, indexSpeakerDown], textSpeedSpeakerDown));
                     textSpeakerUp.text = " ";
                     
@@ -184,6 +185,7 @@ public class StoryManager : MonoBehaviour
 
       public void GivenAnswerCamarade()
         {
+            spriteChanger.ChangeSprite();
             if (trueAnswer == "Traître")
             {
                 answerChecker.CheckAnswer("Incorrect");
